@@ -51,8 +51,7 @@ test("test email method", () => {
 // test get role method
 
 test("test role method", () => {
-    let role = "Employee";
-    let employee = new Employee("Alyssa", 11, "employee@thiscompany.com");
-    expect(employee.getRole()).toBe(role);
-  });
-  
+  let role = "Employee";
+  let employee = new Employee("Alyssa", 11, "employee@thiscompany.com");
+  expect(employee.getRole()).toBe(role);
+});
