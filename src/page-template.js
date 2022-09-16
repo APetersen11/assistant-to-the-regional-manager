@@ -60,11 +60,11 @@ function buildTeam(team) {
     .join("");
   html.push(newManagersHtml);
 
-  let newInternssHtml = team
+  let newInternsHtml = team
     .filter((employee) => employee.getRole() === "Intern")
     .map((intern) => buildIntern(intern))
     .join("");
-  html.push(newInternssHtml);
+  html.push(newInternsHtml);
 
   let newEngineersHtml = team
     .filter((employee) => employee.getRole() === "Engineer")

@@ -112,7 +112,6 @@ function init() {
 // sort data by role
 function addEngineer() {
   inquirer.prompt(engineerQs).then((data) => {
-    console.log(data);
     let engineer = new Engineer(
       data.employeeName,
       data.employeeId,
@@ -126,7 +125,6 @@ function addEngineer() {
 
 function addIntern() {
   inquirer.prompt(internQs).then((data) => {
-    console.log(data);
     let intern = new Intern(
       data.employeeName,
       data.employeeId,
@@ -140,7 +138,6 @@ function addIntern() {
 
 function addManager() {
   inquirer.prompt(managerQs).then((data) => {
-    console.log(data);
     let manager = new Manager(
       data.employeeName,
       data.employeeId,
@@ -155,7 +152,6 @@ function addManager() {
 // build html
 function buildHTML() {
   fs.writeFileSync("./dist/team.html", pageTemplate(team), "utf-8");
-  console.log(team);
 }
 
 init();
