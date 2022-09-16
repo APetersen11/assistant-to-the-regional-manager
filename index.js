@@ -7,11 +7,6 @@ const pageTemplate = require("./src/page-template");
 
 const team = [];
 
-// fn 2 menu function
-// sends them to selected function
-// creates a loop, exits by hitting done and send to HTML function
-// add inquirer prompts menu function -> what do you want to do?
-
 // prompts asking for info
 const addRole = [
   {
@@ -22,7 +17,7 @@ const addRole = [
   },
 ];
 
-// fn 1 add manager
+// add manager
 const managerQs = [
   {
     type: "input",
@@ -46,9 +41,7 @@ const managerQs = [
   },
 ];
 
-// fn 3 add engineer
-// add inquirer prompts
-
+// add engineer
 const engineerQs = [
   {
     type: "input",
@@ -72,9 +65,7 @@ const engineerQs = [
   },
 ];
 
-// fn 4 add intern
-// add inquirer prompts
-
+// add intern
 const internQs = [
   {
     type: "input",
@@ -98,8 +89,8 @@ const internQs = [
   },
 ];
 
-// fn 5 build html
 
+// generate data
 function init() {
   inquirer.prompt(addRole).then((data) => {
     switch (data.roleChoice) {
@@ -118,6 +109,7 @@ function init() {
   });
 }
 
+// sort data by role
 function addEngineer() {
   inquirer.prompt(engineerQs).then((data) => {
     console.log(data);
@@ -160,6 +152,7 @@ function addManager() {
   });
 }
 
+// build html
 function buildHTML() {
   fs.writeFileSync("./dist/team.html", pageTemplate(team), "utf-8");
   console.log(team);
