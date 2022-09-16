@@ -9,9 +9,9 @@ function buildTeam(team) {
               <h6 class="card-text"><i class="bi bi-cup-hot-fill"></i> Manager</h6>
             </div>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item" id="eng-id-number">ID: ${manager.getId()}</li>
-                <li class="list-group-item" id="eng-email">Email: ${manager.getEmail()}</li>
-                <li class="list-group-item" id="eng-github">Office Number: ${manager.getOfficeNumber()}</li>
+                <li class="list-group-item" id="man-id-number">ID: ${manager.getId()}</li>
+                <li class="list-group-item">Email: <a href= mailto: ${manager.getEmail()} id="man-email">${manager.getEmail()}</a></li>
+                <li class="list-group-item" id="man-office-number">Office Number: ${manager.getOfficeNumber()}</li>
               </ul>
           </div>
         </div>
@@ -27,9 +27,9 @@ function buildTeam(team) {
               <h6 class="card-text"><i class="bi bi-journal-bookmark-fill"></i> Intern</h6>
             </div>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item" id="eng-id-number">ID: ${intern.getId()}</li>
-                <li class="list-group-item" id="eng-email">Email: ${intern.getEmail()}</li>
-                <li class="list-group-item" id="eng-github">School: ${intern.getSchool()}</li>
+                <li class="list-group-item" id="int-id-number">ID: ${intern.getId()}</li>
+                <li class="list-group-item">Email: <a href= mailto: ${intern.getEmail()} id="int-email">${intern.getEmail()}</a></li>
+                <li class="list-group-item" id="get-school">School: ${intern.getSchool()}</li>
               </ul>
           </div>
         </div>`;
@@ -45,8 +45,8 @@ function buildTeam(team) {
         </div>
         <ul class="list-group list-group-flush">
             <li class="list-group-item" id="eng-id-number">ID: ${engineer.getId()}</li>
-            <li class="list-group-item" id="eng-email">Email: ${engineer.getEmail()}</li>
-            <li class="list-group-item" id="eng-github">GitHub: ${engineer.getGithub()}</li>
+            <li class="list-group-item">Email: <a href= mailto: ${engineer.getEmail()} id="eng-email">${engineer.getEmail()}</a></li>
+            <li class="list-group-item">GitHub: <a href= https://github.com/${engineer.getGithub()} id="eng-github">${engineer.getGithub()}</li>
           </ul>
       </div>
     </div>

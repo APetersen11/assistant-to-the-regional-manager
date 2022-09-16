@@ -18,7 +18,7 @@ const addRole = [
     type: "list",
     name: "roleChoice",
     message: "What employee role would you like to add?",
-    choices: ["Engineer", "Intern", "Manager", "Exit"],
+    choices: ["Manager", "Engineer", "Intern", "Exit"],
   },
 ];
 
@@ -104,7 +104,7 @@ function init() {
   inquirer.prompt(addRole).then((data) => {
     switch (data.roleChoice) {
       case "Manager":
-        addManger();
+        addManager();
         break;
       case "Intern":
         addIntern();
