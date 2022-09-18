@@ -19,7 +19,7 @@ To use this application you will need to type 'node index' into your command lin
 
 The repo for this project can be found [here.](https://github.com/APetersen11/assistant-to-the-regional-manager)
 
-A video walk-through of this application can be found [here.](https://drive.google.com/file/d/1CNQJA13VLLSdRpEzl-LOa1_Bmr7VbhwV/view) 
+A video walk-through of this application can be found [here.](https://drive.google.com/file/d/1oAlWgG_WDObiHQ37jr8qzydoQwUiNu4t/view) 
 
 ![screenshot1](./src/images/Screen%20Shot%202022-09-16%20at%204.50.06%20PM.png)
 
